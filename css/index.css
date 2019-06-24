@@ -17,6 +17,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .toggleA {
+    width: 490px;
+    margin-top: 60px;
+  }
+}
 .backgroundBlue {
   background-color: #5478ee;
 }
