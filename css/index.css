@@ -42,7 +42,7 @@ header button {
 }
 @media (max-width: 500px) {
   header {
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
     justify-content: center;
     width: 100%;
   }
@@ -81,4 +81,9 @@ article button {
   background-color: lightblue;
   padding: 3px;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  article h1 {
+    margin: 0px;
+  }
 }
