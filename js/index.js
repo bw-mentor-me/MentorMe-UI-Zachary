@@ -1,7 +1,22 @@
-const h = document.querySelector('h1');
+const headerButton = document.querySelector('.hamburger');
 
-console.log(h);
+const headerA = document.querySelectorAll('header a');
+console.log(headerA);
 
-h.addEventListener('click', event => {
-    h.classList.toggle('none');
+headerButton.addEventListener('click', event => {
+    headerA.forEach(a => {
+       a.classList.toggle('toggleA');
+    })
+})
+
+const nav = document.querySelector('header');
+
+headerButton.addEventListener('click', event => {
+    nav.classList.toggle('backgroundBlue');
+})
+
+const contactButton = document.querySelector('header button');
+
+headerButton.addEventListener('click', event => {
+    contactButton.classList.toggle('backgroundBlue');
 })
