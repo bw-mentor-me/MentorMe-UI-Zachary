@@ -26,6 +26,11 @@ body {
 .backgroundBlue {
   background-color: #5478ee;
 }
+@media (max-width: 500px) {
+  .backgroundBlue {
+    background: white;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -37,14 +42,15 @@ header img {
 }
 header a {
   font-size: 2rem;
-  margin-top: 15px;
+  margin-top: 13px;
   display: none;
+  text-decoration: none;
 }
 header button {
   border: 1px solid #5478ee;
   font-size: 2rem;
   background-color: lightblue;
-  border-radius: 15px;
+  border-radius: 15%;
 }
 @media (max-width: 500px) {
   header {
