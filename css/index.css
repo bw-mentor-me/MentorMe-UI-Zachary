@@ -7,6 +7,12 @@ body {
   margin: 0 300px 0 300px;
   background: linear-gradient(to bottom left, white, #edf3fc);
 }
+@media (max-width: 500px) {
+  body {
+    margin: 0 50px 0 50px;
+    background: white;
+  }
+}
 .toggleA {
   display: flex;
   justify-content: space-between;
@@ -33,6 +39,20 @@ header button {
   font-size: 2rem;
   background-color: lightblue;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  header {
+    margin: 10px 0 0 0;
+    justify-content: center;
+    width: 100%;
+  }
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+  header button {
+    display: none;
+  }
 }
 article {
   display: flex;
