@@ -6,6 +6,7 @@
   color: white;
   h2 {
     padding: 20px;
+    background-image: linear-gradient(to right, #152a6b, rgb(192, 192, 192) ;);
   }
   .team-info {
     display: flex;
@@ -20,13 +21,11 @@
       height: 500px;
       padding: 20px;
       .tab {
-        // border: 1px solid blue;
-        background: #4c5264;
+        background: #152a6b;
         height: 50px;
         font-size: 2rem;
         padding-top: 14px;
         border-radius: 10px;
-        // color: black;
       }
     }
   }
@@ -37,8 +36,8 @@
     justify-content: space-evenly;
     .card {
       width: 350px;
-      //   border: 1px solid red;
       margin: 40px;
+      animation: fadeIn 2s;
       .name-contain {
         display: flex;
         flex-direction: row;
@@ -57,5 +56,14 @@
         border-radius: 10px;
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
