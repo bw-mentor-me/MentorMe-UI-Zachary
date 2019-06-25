@@ -1,4 +1,4 @@
-// toggle nav button "hamburger"
+// TOGGLE NAV BUTTON 'HAMBURGER'
 const hamburger = document.querySelector('.nav-button');
 console.log(hamburger);
 
@@ -18,6 +18,7 @@ hamburger.addEventListener('click', event => {
     nav.classList.toggle('border');
 })
 
+//TOGGLE A-LINK BACKGROUND COLOR
 aLinks.forEach(link => {
     link.addEventListener('mouseover', event => {
         link.classList.toggle('bg');
