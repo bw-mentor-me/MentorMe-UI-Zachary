@@ -171,6 +171,11 @@ header .navbar {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1024px) {
+  header .navbar {
+    justify-content: space-around;
+  }
+}
 header .navbar img {
   width: 100px;
   height: 100px;
@@ -179,6 +184,11 @@ header .navbar h1 {
   width: 300px;
   color: #58b1e9;
   padding: 25px;
+}
+@media (max-width: 650px) {
+  header .navbar h1 {
+    width: 200px;
+  }
 }
 @media (max-width: 500px) {
   header .navbar h1 {
@@ -194,6 +204,17 @@ header .navbar button {
   border-radius: 10px;
   font-size: 2.5rem;
   color: white;
+}
+@media (max-width: 1024px) {
+  header .navbar button {
+    width: 100px;
+    height: 60px;
+  }
+}
+@media (max-width: 900px) {
+  header .navbar button {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   header .navbar button {
@@ -217,16 +238,13 @@ a {
 }
 .displayA {
   display: flex;
-  border-top: 1px solid grey;
+  border-top: 1px solid gray;
   padding: 10px;
   width: 100%;
 }
 .border {
   border: 1px solid grey;
   border-radius: 10px;
-}
-.bg {
-  background-color: #f3f3ef;
 }
 .top-content {
   text-align: center;
@@ -249,6 +267,11 @@ a {
   width: 40%;
   align-self: center;
   border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .top-content img {
+    width: 98%;
+  }
 }
 @media (max-width: 500px) {
   .top-content img {
@@ -310,6 +333,11 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+  }
+}
+@media (min-width: 1300px) {
+  .for-mentees {
+    height: 600px;
   }
 }
 @media (max-width: 500px) {

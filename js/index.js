@@ -21,6 +21,12 @@ hamburger.addEventListener('click', event => {
 //TOGGLE A-LINK BACKGROUND COLOR
 aLinks.forEach(link => {
     link.addEventListener('mouseover', event => {
-        link.classList.toggle('bg');
+        link.style.backgroundColor = 'lightgray';
+    })
+})
+
+aLinks.forEach(link => {
+    link.addEventListener('mouseout', event => {
+        link.style.backgroundColor = 'white';
     })
 })
