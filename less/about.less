@@ -4,6 +4,10 @@
   justify-content: space-evenly;
   background-image: linear-gradient(#5887f9, #468db9, white);
   color: white;
+  @media @mobile {
+    background-image: none;
+    background: #5887f9;
+  }
   h2 {
     padding: 20px;
     background-image: linear-gradient(to right, #152a6b, rgb(192, 192, 192) ;);
@@ -12,6 +16,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    @media @mobile {
+      flex-direction: column;
+    }
     .scopes {
       display: flex;
       flex-direction: column;
@@ -20,6 +27,10 @@
       text-align: center;
       height: 500px;
       padding: 20px;
+      @media @mobile {
+        width: 100%;
+        height: 350px;
+      }
       .tab {
         background: #152a6b;
         height: 50px;
@@ -38,6 +49,11 @@
       width: 350px;
       margin: 40px;
       animation: fadeIn 2s;
+      @media @mobile {
+        margin: 10px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid lightgray;
+      }
       .name-contain {
         display: flex;
         flex-direction: row;

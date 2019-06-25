@@ -296,6 +296,12 @@ header a {
   background-image: linear-gradient(#5887f9, #468db9, white);
   color: white;
 }
+@media (max-width: 500px) {
+  .container {
+    background-image: none;
+    background: #5887f9;
+  }
+}
 .container h2 {
   padding: 20px;
   background-image: linear-gradient(to right, #152a6b, #c0c0c0);
@@ -305,6 +311,11 @@ header a {
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .container .team-info {
+    flex-direction: column;
+  }
+}
 .container .team-info .scopes {
   display: flex;
   flex-direction: column;
@@ -313,6 +324,12 @@ header a {
   text-align: center;
   height: 500px;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .container .team-info .scopes {
+    width: 100%;
+    height: 350px;
+  }
 }
 .container .team-info .scopes .tab {
   background: #152a6b;
@@ -331,6 +348,13 @@ header a {
   width: 350px;
   margin: 40px;
   animation: fadeIn 2s;
+}
+@media (max-width: 500px) {
+  .container .team-cards .card {
+    margin: 10px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid lightgray;
+  }
 }
 .container .team-cards .card .name-contain {
   display: flex;
