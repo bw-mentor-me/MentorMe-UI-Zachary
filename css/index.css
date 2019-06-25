@@ -165,12 +165,17 @@ img {
 body {
   margin: 0 80px 0 80px;
 }
+.displayA {
+  display: flex;
+  justify-content: flex-end;
+}
 header {
   margin: 0 100px 20px 100px;
 }
 header .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 header .navbar img {
@@ -181,15 +186,15 @@ header .navbar h1 {
   color: #58b1e9;
   padding: 10px;
 }
-header .navbar nav {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-  font-size: 2rem;
+header .navbar .nav-button {
+  width: 80px;
+  height: 80px;
 }
-header .navbar nav a {
+header a {
   text-decoration: none;
   color: gray;
+  display: none;
+  font-size: 3rem;
 }
 .top-content {
   text-align: center;
@@ -277,6 +282,6 @@ header .navbar nav a {
   height: 50px;
   border: none;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
 }
