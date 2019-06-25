@@ -351,6 +351,11 @@ a {
   color: white;
   padding-top: 50px;
 }
+@media (max-width: 1024px) {
+  .for-mentees {
+    margin-top: 200px;
+  }
+}
 @media (max-width: 500px) {
   .for-mentees {
     flex-direction: column;
@@ -380,9 +385,19 @@ a {
     align-items: center;
   }
 }
+@media (max-width: 1024px) {
+  .for-mentees .text-content h3 {
+    font-size: 3.5rem;
+  }
+}
 .for-mentees .text-img {
   width: 40%;
   padding: 20px;
+}
+@media (max-width: 1024px) {
+  .for-mentees .text-img {
+    width: 50%;
+  }
 }
 @media (max-width: 500px) {
   .for-mentees .text-img {
@@ -414,7 +429,7 @@ a {
   font-size: 2.5rem;
   color: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .join-now button {
     width: 400px;
     height: 100px;
