@@ -2,15 +2,24 @@
 const hamburger = document.querySelector('.nav-button');
 console.log(hamburger);
 
-const aLinks = document.querySelectorAll('header a');
+const aLinks = document.querySelectorAll('.nav a');
 console.log(aLinks);
 
-hamburger.addEventListener('click', event => {
-    hamburger.style.border = '1px solid gray';
-})
+const nav = document.querySelector('.nav');
+console.log(nav);
 
 hamburger.addEventListener('click', event => {
     aLinks.forEach(link => {
         link.classList.toggle('displayA');
+    })
+})
+
+hamburger.addEventListener('click', event => {
+    nav.classList.toggle('border');
+})
+
+aLinks.forEach(link => {
+    link.addEventListener('mouseover', event => {
+        link.classList.toggle('bg');
     })
 })
