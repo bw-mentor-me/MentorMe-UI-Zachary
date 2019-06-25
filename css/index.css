@@ -352,15 +352,18 @@ body .container .team-info .scopes .tab {
   font-size: 2rem;
   padding-top: 14px;
   border-radius: 10px;
+  font-size: 1vw;
 }
 @media (max-width: 800px) {
   body .container .team-info .scopes .tab {
     width: 40%;
+    font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
   body .container .team-info .scopes .tab {
     width: 100%;
+    font-size: 2rem;
   }
 }
 body .container .team-cards {
