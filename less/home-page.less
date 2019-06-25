@@ -105,7 +105,7 @@ a {
     border-radius: 10px;
     // border: 1px solid red;
     @media (max-width: 1024px) {
-      width: 98%;
+      width: 80%;
     }
     @media (max-width: 500px) {
       width: 98%;
@@ -115,6 +115,11 @@ a {
 
 .for-mentors {
   display: flex;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
   @media (max-width: 500px) {
     flex-direction: column;
     align-items: center;
@@ -132,16 +137,28 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    @media (max-width: 1024px) {
+      width: 80%;
+      align-items: center;
+    }
     @media (max-width: 500px) {
       width: 98%;
       align-items: center;
     }
-    width: 40%;
-    
+    width: 40%;  
     // border: 1px solid blue;
+    h3 {
+      @media (max-width: 1024px) {
+        font-size: 4rem;
+      }
+    }
   }
   .text-img {
     width: 40%;
+    @media (max-width: 1024px) {
+      width: 98%;
+    }
+    
     @media (max-width: 500px) {
       width: 98%;
     }
