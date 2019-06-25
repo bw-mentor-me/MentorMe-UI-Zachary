@@ -233,8 +233,6 @@ header .navbar nav a {
 }
 .for-mentors .text-img img {
   border-radius: 10px;
-  max-width: 570px;
-  margin-right: 200px;
 }
 .for-mentees {
   display: flex;
@@ -259,8 +257,6 @@ header .navbar nav a {
 }
 .for-mentees .text-img img {
   border-radius: 10px;
-  max-width: 570px;
-  margin-left: 150px;
 }
 .join-now {
   display: flex;
