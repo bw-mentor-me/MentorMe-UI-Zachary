@@ -162,6 +162,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+body {
+  margin: 0 80px 0 80px;
+}
 header {
   margin: 0 100px 20px 100px;
 }
