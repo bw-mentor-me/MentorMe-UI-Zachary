@@ -153,6 +153,10 @@ h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
+h5 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -284,4 +288,45 @@ header a {
   border-radius: 10px;
   font-size: 2.5rem;
   color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: linear-gradient(#5887f9, #60c3ff, white);
+}
+.container .team-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container .team-info .scopes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+  text-align: center;
+  height: 500px;
+}
+.container .team-info .scopes .tab {
+  border: 1px solid blue;
+  height: 50px;
+  font-size: 2rem;
+  padding-top: 14px;
+}
+.container .team-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container .team-cards .card {
+  width: 30%;
+  border: 1px solid red;
+  margin: 20px;
+}
+.container .team-cards .card .name-contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

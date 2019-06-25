@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: linear-gradient(#5887f9, #60c3ff, white);
+  .team-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .scopes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 20%;
+      text-align: center;
+      height: 500px;
+      .tab {
+        border: 1px solid blue;
+        height: 50px;
+        font-size: 2rem;
+        padding-top: 14px;
+      }
+    }
+  }
+  .team-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card {
+      width: 30%;
+      border: 1px solid red;
+      margin: 20px;
+      .name-contain {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
