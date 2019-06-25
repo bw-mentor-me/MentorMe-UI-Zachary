@@ -19,6 +19,9 @@
     @media @mobile {
       flex-direction: column;
     }
+    @media @tablet {
+      flex-direction: column;
+    }
     .scopes {
       display: flex;
       flex-direction: column;
@@ -31,12 +34,24 @@
         width: 100%;
         height: 350px;
       }
+      @media @tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 250px;
+        :first-child {
+          order: 5;
+        }
+      }
       .tab {
         background: #152a6b;
         height: 50px;
         font-size: 2rem;
         padding-top: 14px;
         border-radius: 10px;
+        @media @tablet {
+          width: 40%;
+        }
       }
     }
   }
@@ -53,6 +68,9 @@
         margin: 10px;
         padding-bottom: 30px;
         border-bottom: 2px solid lightgray;
+      }
+      @media @tablet {
+        width: 35%;
       }
       .name-contain {
         display: flex;
