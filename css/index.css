@@ -289,10 +289,10 @@ header a {
   font-size: 2.5rem;
   color: white;
 }
-body {
+.about-body {
   margin-left: 0;
 }
-body .container {
+.about-body .container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -300,26 +300,26 @@ body .container {
   color: white;
 }
 @media (max-width: 800px) {
-  body .container {
+  .about-body .container {
     background-image: none;
     background: #5887f9;
   }
 }
-body .container h2 {
+.about-body .container h2 {
   padding: 20px;
   background-image: linear-gradient(to right, #152a6b, #c0c0c0);
 }
-body .container .team-info {
+.about-body .container .team-info {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 @media (max-width: 800px) {
-  body .container .team-info {
+  .about-body .container .team-info {
     flex-direction: column;
   }
 }
-body .container .team-info .scopes {
+.about-body .container .team-info .scopes {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -329,24 +329,24 @@ body .container .team-info .scopes {
   padding: 20px;
 }
 @media (max-width: 800px) {
-  body .container .team-info .scopes {
+  .about-body .container .team-info .scopes {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     height: 250px;
   }
-  body .container .team-info .scopes :first-child {
+  .about-body .container .team-info .scopes :first-child {
     order: 5;
   }
 }
 @media (max-width: 500px) {
-  body .container .team-info .scopes {
+  .about-body .container .team-info .scopes {
     flex-direction: column;
     width: 100%;
     height: 350px;
   }
 }
-body .container .team-info .scopes .tab {
+.about-body .container .team-info .scopes .tab {
   background: #152a6b;
   height: 50px;
   font-size: 2rem;
@@ -355,56 +355,56 @@ body .container .team-info .scopes .tab {
   font-size: 1vw;
 }
 @media (max-width: 800px) {
-  body .container .team-info .scopes .tab {
+  .about-body .container .team-info .scopes .tab {
     width: 40%;
     font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
-  body .container .team-info .scopes .tab {
+  .about-body .container .team-info .scopes .tab {
     width: 100%;
     font-size: 2rem;
   }
 }
-body .container .team-cards {
+.about-body .container .team-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-body .container .team-cards .card {
+.about-body .container .team-cards .card {
   width: 350px;
   margin: 40px;
   animation: fadeIn 2s;
 }
 @media (max-width: 800px) {
-  body .container .team-cards .card {
+  .about-body .container .team-cards .card {
     width: 35%;
   }
 }
 @media (max-width: 500px) {
-  body .container .team-cards .card {
+  .about-body .container .team-cards .card {
     width: 350px;
     margin: 10px;
     padding-bottom: 30px;
     border-bottom: 2px solid lightgray;
   }
 }
-body .container .team-cards .card .name-contain {
+.about-body .container .team-cards .card .name-contain {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body .container .team-cards .card .name-contain h3 {
+.about-body .container .team-cards .card .name-contain h3 {
   margin-left: 5%;
 }
-body .container .team-cards .card .name-contain a {
+.about-body .container .team-cards .card .name-contain a {
   margin-right: 5%;
 }
-body .container .team-cards .card h5 {
+.about-body .container .team-cards .card h5 {
   margin-left: 5%;
 }
-body .container .team-cards .card img {
+.about-body .container .team-cards .card img {
   border-radius: 10px;
 }
 @keyframes fadeIn {
