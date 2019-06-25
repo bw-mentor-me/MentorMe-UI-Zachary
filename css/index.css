@@ -172,16 +172,26 @@ header {
 }
 header .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 header .navbar img {
-  width: 30%;
-  height: 50%;
+  width: 100px;
+  height: 100px;
 }
 header .navbar h1 {
-  width: 60%;
+  width: 300px;
   color: #58b1e9;
-  padding: 10px;
+  padding: 25px;
+}
+header .navbar button {
+  margin-top: 25px;
+  background: #58b1e9;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  color: white;
 }
 header .nav {
   display: flex;
@@ -208,7 +218,7 @@ a {
   border: 1px solid grey;
 }
 .bg {
-  background-color: #e7e7d3;
+  background-color: #f3f3ef;
 }
 .top-content {
   text-align: center;
