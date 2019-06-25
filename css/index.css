@@ -247,6 +247,8 @@ a {
   border-radius: 10px;
 }
 .top-content {
+  margin-left: 80px;
+  margin-right: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -255,6 +257,12 @@ a {
   background-image: linear-gradient(#5887f9, #60c3ff, white);
   padding: 20px 20px 50px 20px;
   color: white;
+}
+@media (max-width: 500px) {
+  .top-content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .top-content h2 {
   padding: 10px;
