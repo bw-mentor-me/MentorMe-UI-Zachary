@@ -153,6 +153,10 @@ h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
+h5 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -272,7 +276,7 @@ a {
 }
 .top-content img {
   margin: 10px;
-  width: 40%;
+  width: 50%;
   align-self: center;
   border-radius: 10px;
 }
@@ -347,6 +351,8 @@ a {
 }
 .for-mentors .text-img img {
   border-radius: 10px;
+  border: 1px solid lightblue;
+  height: 350px;
 }
 .for-mentees {
   display: flex;
@@ -414,6 +420,8 @@ a {
 }
 .for-mentees .text-img img {
   border-radius: 10px;
+  border: 1px solid lightblue;
+  height: 350px;
 }
 .join-now {
   display: flex;
@@ -442,5 +450,131 @@ a {
     width: 400px;
     height: 100px;
     font-size: 3rem;
+  }
+}
+.about-body {
+  margin-left: 0;
+}
+.about-body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: linear-gradient(#5887f9, #468db9, white);
+  color: white;
+}
+@media (max-width: 800px) {
+  .about-body .container {
+    background-image: none;
+    background: #5887f9;
+  }
+}
+.about-body .container h2 {
+  padding: 20px;
+  background-image: linear-gradient(to right, #152a6b, #c0c0c0);
+}
+.about-body .container .team-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .about-body .container .team-info {
+    flex-direction: column;
+  }
+}
+.about-body .container .team-info .scopes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+  text-align: center;
+  height: 500px;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .about-body .container .team-info .scopes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 250px;
+  }
+  .about-body .container .team-info .scopes :first-child {
+    order: 5;
+  }
+}
+@media (max-width: 500px) {
+  .about-body .container .team-info .scopes {
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+  }
+}
+.about-body .container .team-info .scopes .tab {
+  background: #152a6b;
+  height: 50px;
+  font-size: 2rem;
+  padding-top: 14px;
+  border-radius: 10px;
+  font-size: 1vw;
+}
+@media (max-width: 800px) {
+  .about-body .container .team-info .scopes .tab {
+    width: 40%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-body .container .team-info .scopes .tab {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+.about-body .container .team-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.about-body .container .team-cards .card {
+  width: 350px;
+  margin: 40px;
+  animation: fadeIn 2s;
+}
+@media (max-width: 800px) {
+  .about-body .container .team-cards .card {
+    width: 35%;
+  }
+}
+@media (max-width: 500px) {
+  .about-body .container .team-cards .card {
+    width: 350px;
+    margin: 10px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid lightgray;
+  }
+}
+.about-body .container .team-cards .card .name-contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-body .container .team-cards .card .name-contain h3 {
+  margin-left: 5%;
+}
+.about-body .container .team-cards .card .name-contain a {
+  margin-right: 5%;
+}
+.about-body .container .team-cards .card h5 {
+  margin-left: 5%;
+}
+.about-body .container .team-cards .card img {
+  border-radius: 10px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
