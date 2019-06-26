@@ -276,7 +276,8 @@ a {
 }
 .top-content img {
   margin: 10px;
-  width: 40%;
+  border: 1px solid lightblue;
+  width: 50%;
   align-self: center;
   border-radius: 10px;
 }
@@ -351,6 +352,13 @@ a {
 }
 .for-mentors .text-img img {
   border-radius: 10px;
+  border: 1px solid lightblue;
+  height: 350px;
+}
+@media (max-width: 1024px) {
+  .for-mentors .text-img img {
+    width: 98%;
+  }
 }
 .for-mentees {
   display: flex;
@@ -418,6 +426,13 @@ a {
 }
 .for-mentees .text-img img {
   border-radius: 10px;
+  border: 1px solid lightblue;
+  height: 350px;
+}
+@media (max-width: 700px) {
+  .for-mentees .text-img img {
+    width: 400px;
+  }
 }
 .join-now {
   display: flex;
@@ -431,6 +446,9 @@ a {
   margin-top: 30px;
   margin-bottom: 50px;
   color: #1f1f1f;
+}
+.join-now h4 {
+  width: 300px;
 }
 .join-now button {
   width: 50%;
@@ -574,4 +592,3 @@ a {
     opacity: 1;
   }
 }
-
