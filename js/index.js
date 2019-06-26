@@ -73,3 +73,17 @@ function changeImg2() {
 	setTimeout("changeImg2()", time2);
 }
 window.onload = changeImg2();
+
+//BUTTON LINK TO WEB APP
+const actionButton = document.querySelector('.action-button');
+console.log(actionButton);
+
+const actionButton2 = document.querySelector('.action-button2')
+
+actionButton.addEventListener('click', event => {
+    window.location="https://happy-turing-9cd6b1.netlify.com";
+})
+
+actionButton2.addEventListener('click', event => {
+    window.location="https://happy-turing-9cd6b1.netlify.com";
+})
