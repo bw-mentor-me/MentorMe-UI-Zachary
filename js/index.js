@@ -80,17 +80,10 @@ console.log(actionButton);
 
 const actionButton2 = document.querySelector('.action-button2')
 
-const actionButton3 = document.querySelector('.action-button3')
-console.log(actionButton3);
-
 actionButton.addEventListener('click', event => {
     window.location="https://happy-turing-9cd6b1.netlify.com";
 })
 
 actionButton2.addEventListener('click', event => {
-    window.location="https://happy-turing-9cd6b1.netlify.com";
-})
-
-actionButton3.addEventListener('click', event => {
     window.location="https://happy-turing-9cd6b1.netlify.com";
 })

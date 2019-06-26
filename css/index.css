@@ -355,6 +355,11 @@ a {
   border: 1px solid lightblue;
   height: 350px;
 }
+@media (max-width: 1024px) {
+  .for-mentors .text-img img {
+    width: 98%;
+  }
+}
 .for-mentees {
   display: flex;
   flex-direction: row-reverse;
@@ -424,6 +429,11 @@ a {
   border: 1px solid lightblue;
   height: 350px;
 }
+@media (max-width: 700px) {
+  .for-mentees .text-img img {
+    width: 400px;
+  }
+}
 .join-now {
   display: flex;
   flex-direction: column;
@@ -436,6 +446,9 @@ a {
   margin-top: 30px;
   margin-bottom: 50px;
   color: #1f1f1f;
+}
+.join-now h4 {
+  width: 300px;
 }
 .join-now button {
   width: 50%;
