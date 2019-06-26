@@ -73,10 +73,16 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      // .hidden {
+      //   display: none;
+      // }
       .card {
         width: 350px;
         margin: 40px;
         animation: fadeIn 2s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         @media @tablet {
           width: 35%;
         }

@@ -553,6 +553,9 @@ a {
   width: 350px;
   margin: 40px;
   animation: fadeIn 2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 @media (max-width: 800px) {
   .about-body .container .team-cards .card {
