@@ -577,6 +577,7 @@ header .nav .nav-button:hover {
 }
 .about-body .container .team-info .scopes .tab:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 @media (max-width: 800px) {
   .about-body .container .team-info .scopes .tab {
@@ -592,6 +593,7 @@ header .nav .nav-button:hover {
 }
 .about-body .container .team-info .scopes .active-tab {
   background: #1d3ea3;
+  box-shadow: 5px 5px 5px lightblue;
 }
 .about-body .container .team-cards {
   display: flex;
