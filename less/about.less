@@ -12,11 +12,8 @@
     }
     h2 {
       padding: 20px;
-      background-image: linear-gradient(
-        to right,
-        #152a6b,
-        rgb(192, 192, 192) ;
-      );
+      background-image: linear-gradient(to right, rgb(77, 77, 77), #5887f9);
+      // background: black;
     }
     .team-info {
       display: flex;
@@ -52,12 +49,14 @@
         }
 
         .tab {
-          background: #152a6b;
+          background: rgb(77, 77, 77);
+          // background-image: linear-gradient(to right, rgb(77, 77, 77), #5887f9);
           height: 50px;
           font-size: 2rem;
           padding-top: 14px;
           border-radius: 10px;
           font-size: 1vw;
+          box-shadow: 5px 5px 5px rgb(177, 177, 177);
           &:hover {
             cursor: pointer;
           }
@@ -71,7 +70,7 @@
           }
         }
         .active-tab {
-          background: #3665f1;
+          background: #1d3ea3;
         }
       }
     }
@@ -117,6 +116,7 @@
         }
         img {
           border-radius: 10px;
+          box-shadow: 5px 5px 5px white;
         }
       }
     }
