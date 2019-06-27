@@ -531,6 +531,9 @@ header .nav .nav-button {
   border-radius: 10px;
   font-size: 1vw;
 }
+.about-body .container .team-info .scopes .tab:hover {
+  cursor: pointer;
+}
 @media (max-width: 800px) {
   .about-body .container .team-info .scopes .tab {
     width: 40%;
