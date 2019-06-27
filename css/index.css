@@ -208,6 +208,11 @@ header .navbar button {
   border-radius: 10px;
   font-size: 2.5rem;
   color: white;
+  box-shadow: 3px 3px 3px lightblue;
+}
+header .navbar button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 @media (max-width: 1024px) {
   header .navbar button {
@@ -229,6 +234,8 @@ header .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  right: 90px;
 }
 header .nav a {
   text-decoration: none;
@@ -241,16 +248,21 @@ header .nav .displayA {
   border-top: 1px solid gray;
   padding: 10px;
   width: 100%;
+  background: white;
 }
 header .nav .nav-button {
   width: 90px;
   height: 90px;
+}
+header .nav .nav-button:hover {
+  transform: scale(1.1);
 }
 .border {
   border: 1px solid grey;
   border-radius: 10px;
 }
 .top-content {
+  border-top: 3px double grey;
   margin-left: 80px;
   margin-right: 80px;
   text-align: center;
@@ -280,6 +292,7 @@ header .nav .nav-button {
   width: 50%;
   align-self: center;
   border-radius: 10px;
+  box-shadow: 4px 4px 4px white;
 }
 @media (max-width: 1024px) {
   .top-content img {
@@ -331,9 +344,20 @@ header .nav .nav-button {
     align-items: center;
   }
 }
+.for-mentors .text-content h3 {
+  font-size: 5rem;
+}
 @media (max-width: 1024px) {
   .for-mentors .text-content h3 {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+}
+.for-mentors .text-content p {
+  font-size: 3rem;
+}
+@media (max-width: 700px) {
+  .for-mentors .text-content p {
+    font-size: 1.6rem;
   }
 }
 .for-mentors .text-img {
@@ -350,10 +374,19 @@ header .nav .nav-button {
     width: 98%;
   }
 }
+.for-mentors .text-img .img-moving {
+  animation: fadeIn 2s;
+}
 .for-mentors .text-img img {
   border-radius: 10px;
   border: 1px solid lightblue;
   height: 350px;
+}
+@media (min-width: 1300px) {
+  .for-mentors .text-img img {
+    width: 100%;
+    height: 400p;
+  }
 }
 @media (max-width: 1024px) {
   .for-mentors .text-img img {
@@ -361,6 +394,7 @@ header .nav .nav-button {
   }
 }
 .for-mentees {
+  border-bottom: 3px double grey;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -399,15 +433,31 @@ header .nav .nav-button {
   justify-content: space-evenly;
   width: 40%;
 }
+@media (max-width: 700px) {
+  .for-mentees .text-content {
+    width: 50%;
+  }
+}
 @media (max-width: 500px) {
   .for-mentees .text-content {
     width: 98%;
     align-items: center;
   }
 }
+.for-mentees .text-content h3 {
+  font-size: 5rem;
+}
 @media (max-width: 1024px) {
   .for-mentees .text-content h3 {
     font-size: 3.5rem;
+  }
+}
+.for-mentees .text-content p {
+  font-size: 3rem;
+}
+@media (max-width: 700px) {
+  .for-mentees .text-content p {
+    font-size: 1.6rem;
   }
 }
 .for-mentees .text-img {
@@ -419,6 +469,11 @@ header .nav .nav-button {
     width: 50%;
   }
 }
+@media (max-width: 700px) {
+  .for-mentees .text-img {
+    width: 80%;
+  }
+}
 @media (max-width: 500px) {
   .for-mentees .text-img {
     width: 98%;
@@ -427,11 +482,18 @@ header .nav .nav-button {
 .for-mentees .text-img img {
   border-radius: 10px;
   border: 1px solid lightblue;
-  height: 350px;
+  box-shadow: 4px 4px 4px white;
+}
+@media (min-width: 1300px) {
+  .for-mentees .text-img img {
+    width: 100%;
+    height: 90%;
+  }
 }
 @media (max-width: 700px) {
   .for-mentees .text-img img {
-    width: 400px;
+    width: 95%;
+    height: 80%;
   }
 }
 .join-now {
@@ -458,6 +520,11 @@ header .nav .nav-button {
   border-radius: 10px;
   font-size: 2.5rem;
   color: white;
+  box-shadow: 3px 3px 3px lightblue;
+}
+.join-now button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 @media (max-width: 1024px) {
   .join-now button {
@@ -466,10 +533,29 @@ header .nav .nav-button {
     font-size: 3rem;
   }
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+}
+footer .mm {
+  margin-left: 15px;
+}
+footer .mm h1 {
+  font-size: 130%;
+}
+footer .lambdaLogo {
+  margin-right: 15px;
+}
 .about-body {
   margin-left: 0;
 }
 .about-body .container {
+  border-top: 3px double grey;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -484,7 +570,7 @@ header .nav .nav-button {
 }
 .about-body .container h2 {
   padding: 20px;
-  background-image: linear-gradient(to right, #152a6b, #c0c0c0);
+  background-image: linear-gradient(to right, #4d4d4d, #5887f9);
 }
 .about-body .container .team-info {
   display: flex;
@@ -524,15 +610,17 @@ header .nav .nav-button {
   }
 }
 .about-body .container .team-info .scopes .tab {
-  background: #152a6b;
+  background: #4d4d4d;
   height: 50px;
   font-size: 2rem;
   padding-top: 14px;
   border-radius: 10px;
   font-size: 1vw;
+  box-shadow: 5px 5px 5px #b1b1b1;
 }
 .about-body .container .team-info .scopes .tab:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 @media (max-width: 800px) {
   .about-body .container .team-info .scopes .tab {
@@ -547,7 +635,8 @@ header .nav .nav-button {
   }
 }
 .about-body .container .team-info .scopes .active-tab {
-  background: #3665f1;
+  background: #1d3ea3;
+  box-shadow: 5px 5px 5px lightblue;
 }
 .about-body .container .team-cards {
   display: flex;
@@ -593,11 +682,15 @@ header .nav .nav-button {
 .about-body .container .team-cards .card .name-contain a {
   margin-right: 5%;
 }
+.about-body .container .team-cards .card .name-contain a .git {
+  box-shadow: none;
+}
 .about-body .container .team-cards .card h5 {
   margin-left: 5%;
 }
 .about-body .container .team-cards .card img {
   border-radius: 10px;
+  box-shadow: 5px 5px 5px white;
 }
 @keyframes fadeIn {
   0% {
