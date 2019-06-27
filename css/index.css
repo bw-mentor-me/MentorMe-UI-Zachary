@@ -359,6 +359,9 @@ header .nav .nav-button:hover {
     width: 98%;
   }
 }
+.for-mentors .text-img .img-moving {
+  animation: fadeIn 2s;
+}
 .for-mentors .text-img img {
   border-radius: 10px;
   border: 1px solid lightblue;
@@ -630,6 +633,9 @@ header .nav .nav-button:hover {
 }
 .about-body .container .team-cards .card .name-contain a {
   margin-right: 5%;
+}
+.about-body .container .team-cards .card .name-contain a .git {
+  box-shadow: none;
 }
 .about-body .container .team-cards .card h5 {
   margin-left: 5%;
