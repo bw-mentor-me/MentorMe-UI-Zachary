@@ -262,6 +262,7 @@ header .nav .nav-button:hover {
   border-radius: 10px;
 }
 .top-content {
+  border-top: 3px double grey;
   margin-left: 80px;
   margin-right: 80px;
   text-align: center;
@@ -343,9 +344,20 @@ header .nav .nav-button:hover {
     align-items: center;
   }
 }
+.for-mentors .text-content h3 {
+  font-size: 5rem;
+}
 @media (max-width: 1024px) {
   .for-mentors .text-content h3 {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+}
+.for-mentors .text-content p {
+  font-size: 3rem;
+}
+@media (max-width: 700px) {
+  .for-mentors .text-content p {
+    font-size: 1.6rem;
   }
 }
 .for-mentors .text-img {
@@ -382,6 +394,7 @@ header .nav .nav-button:hover {
   }
 }
 .for-mentees {
+  border-bottom: 3px double grey;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -431,9 +444,20 @@ header .nav .nav-button:hover {
     align-items: center;
   }
 }
+.for-mentees .text-content h3 {
+  font-size: 5rem;
+}
 @media (max-width: 1024px) {
   .for-mentees .text-content h3 {
     font-size: 3.5rem;
+  }
+}
+.for-mentees .text-content p {
+  font-size: 3rem;
+}
+@media (max-width: 700px) {
+  .for-mentees .text-content p {
+    font-size: 1.6rem;
   }
 }
 .for-mentees .text-img {
@@ -509,10 +533,29 @@ header .nav .nav-button:hover {
     font-size: 3rem;
   }
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+}
+footer .mm {
+  margin-left: 15px;
+}
+footer .mm h1 {
+  font-size: 130%;
+}
+footer .lambdaLogo {
+  margin-right: 15px;
+}
 .about-body {
   margin-left: 0;
 }
 .about-body .container {
+  border-top: 3px double grey;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

@@ -89,3 +89,8 @@ actionButton.addEventListener("click", event => {
 actionButton2.addEventListener("click", event => {
   window.location = "https://happy-turing-9cd6b1.netlify.com";
 });
+
+//HOME FUNCTION
+function goHome() {
+  window.location = "index.html";
+}
