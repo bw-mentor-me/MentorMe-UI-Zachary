@@ -556,6 +556,11 @@ header .nav .nav-button {
   justify-content: space-evenly;
   width: 80%;
 }
+@media (max-width: 800px) {
+  .about-body .container .team-cards {
+    width: 100%;
+  }
+}
 .about-body .container .team-cards .card {
   width: 350px;
   margin: 40px;
