@@ -230,21 +230,21 @@ header .nav {
   flex-direction: column;
   align-items: center;
 }
-header .nav .nav-button {
-  width: 90px;
-  height: 90px;
-}
-a {
+header .nav a {
   text-decoration: none;
   color: gray;
   font-size: 1.5rem;
   display: none;
 }
-.displayA {
+header .nav .displayA {
   display: flex;
   border-top: 1px solid gray;
   padding: 10px;
   width: 100%;
+}
+header .nav .nav-button {
+  width: 90px;
+  height: 90px;
 }
 .border {
   border: 1px solid grey;
@@ -531,6 +531,9 @@ a {
   border-radius: 10px;
   font-size: 1vw;
 }
+.about-body .container .team-info .scopes .tab:hover {
+  cursor: pointer;
+}
 @media (max-width: 800px) {
   .about-body .container .team-info .scopes .tab {
     width: 40%;
@@ -543,11 +546,20 @@ a {
     font-size: 2rem;
   }
 }
+.about-body .container .team-info .scopes .active-tab {
+  background: #3665f1;
+}
 .about-body .container .team-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 80%;
+}
+@media (max-width: 800px) {
+  .about-body .container .team-cards {
+    width: 100%;
+  }
 }
 .about-body .container .team-cards .card {
   width: 350px;
