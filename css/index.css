@@ -543,6 +543,9 @@ header .nav .nav-button {
     font-size: 2rem;
   }
 }
+.about-body .container .team-info .scopes .active-tab {
+  background: #3665f1;
+}
 .about-body .container .team-cards {
   display: flex;
   flex-direction: row;
